@@ -1,1 +1,1 @@
-# Lab 2 - Starter
+https://nataliehti.github.io/Lab2_Starter/
