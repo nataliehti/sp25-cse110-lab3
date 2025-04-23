@@ -1,0 +1,86 @@
+/*base styling*/
+:root {
+    --bg-color: #f0f2f5;
+    --sidebar-bg: rgb(44, 62, 80);
+    --card-bg: hsl(0, 0%, 100%);
+    --text-color: rgba(51, 51, 51, 0.9);
+    --accent: #007acc;
+    --form-bg: #fafafa;
+    --border-radius: 8px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*font*/
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color, #fff); 
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 2em; 
+    color: hsl(210, 50%, 20%);
+    text-align: left;
+  }
+  h2 {
+    color: hsl(210, 50%, 20%);
+    text-align: left;
+  }
+
+  h1, h2 {
+    letter-spacing: 0.02em;
+  }
+  
+  /*layout*/
+  .layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16rem;
+  }
+  
+  /*table of contents*/
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 16rem;
+    max-width: 100%;
+    min-width: 12rem;
+    background-color: var(--sidebar-bg);
+    padding: 1.5rem;
+    color: #ecf0f1;
+  }
+  .sidebar-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem; 
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem; 
+    color: white;
+  }
+  .sidebar-nav {
+    display: grid;           
+    grid-template-columns: 1fr;   
+    grid-auto-rows: min-content;
+    gap: 0.75rem;              
+    list-style: none;            
+  }
+  .sidebar-nav a {
+    display: inline-block;         
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;      
+  }
+  .sidebar-nav a:hover {         
+    color: var(--accent);
+  }
+  
