@@ -1,0 +1,21 @@
+/*font*/
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color, #fff); 
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 2em; 
+    color: hsl(210, 50%, 20%);
+    text-align: left;
+  }
+  h2 {
+    color: hsl(210, 50%, 20%);
+    text-align: left;
+  }
+
+  h1, h2 {
+    letter-spacing: 0.02em;
+  }
+  

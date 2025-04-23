@@ -7,144 +7,157 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>World Domination: Phase II</title>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7100/7100440.png">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <header>
-    <h1>World Domination: Phase II</h1>
-    <h2>Topic: <em>Are we taking over the world?</em></h2>
-    <h3>Date: 04/14/2025</h3>
-    <details>
-      <summary><strong>Table of Contents</strong></summary>
+  <div class="layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Contents</h2>
       <nav>
-        <ul>
+        <ul class="sidebar-nav">
+          <li><a href="#attendance">Attendance</a></li>
           <li><a href="#agenda">Agenda</a></li>
           <li><a href="#unfinished">Unfinished Business</a></li>
           <li><a href="#new">New Business</a></li>
+          <li><a href="#comments">Comments</a></li>
           <li><a href="#media">Media</a></li>
           <li><a href="#form">Feedback Form</a></li>
         </ul>
       </nav>
-    </details>
-  </header>
+    </aside>
 
-  <main>
-    <section>
-      <h2>Attendance</h2>
-      <ul>
-        <li>Barack Obama</li>
-        <li>LeBron James</li>
-        <li>Hatsune Miku</li>
-        <li>Thomas A. Powell</li>
-      </ul>
-    </section>
+    <div class="main-content">
+      <header class="main-header">
+        <h1>World Domination: Phase II</h1>
+        <p class="subheading">Topic: <em>Are we taking over the world?</em> | <time datetime="2025-04-14">April 14, 2025</time></p>
+      </header>
 
-    <section id="agenda">
-      <h2>Agenda</h2>
-      <ol>
-        <li>Updates on mixing for the mini album</li>
-        <li>Discuss success and completion of Phase I of world domination</li>
-        <li>Budget check-in</li>
-      </ol>
-    </section>
+      <main>
+        <section id="attendance" class="card">
+          <h2>Attendance</h2>
+          <ul>
+            <li>Barack Obama</li>
+            <li>LeBron James</li>
+            <li>Hatsune Miku</li>
+            <li>Thomas A. Powell</li>
+          </ul>
+        </section>
 
-    <section id="unfinished">
-      <h2>Unfinished Business</h2>
-      <ul>
-        <li>Reviewing construction progress on the spy satellite</li>
-        <li>Intern applications for janitorial</li>
-      </ul>
-    </section>
+        <section id="agenda" class="card">
+          <h2>Agenda</h2>
+          <ol>
+            <li>Updates on mixing for the mini album</li>
+            <li>Discuss success and completion of Phase I of world domination</li>
+            <li>Budget check-in</li>
+          </ol>
+        </section>
 
-    <section id="new">
-      <h2>New Business</h2>
-      <ul>
-        <li><strong>Krispy Kreme Collaboration Flavor</strong> with LeBron James</li>
-        <li>Miku's<em> "World Is Mine"</em> proposal</li>
-        <li>Obama Spicy Noodle Mukbang Video Recording</li>
-      </ul>
-    </section>
+        <section id="unfinished" class="card">
+          <h2>Unfinished Business</h2>
+          <ul>
+            <li>Reviewing construction progress on the spy satellite</li>
+            <li>Intern applications for janitorial</li>
+          </ul>
+        </section>
 
-    <section>
-      <h2>Comments, Questions, Concerns</h2>
-      <p><b>LeBron</b> asked if we should consider commissioning matching uniforms.</p>
-      <p><strong>Obama</strong> raised concerns on team morale &rarr; suggested a team bonding session.</p>
-    </section>
+        <section id="new" class="card">
+          <h2>New Business</h2>
+          <ul>
+            <li><strong>Krispy Kreme Collaboration Flavor</strong> with LeBron James</li>
+            <li>Miku's <em>"World Is Mine"</em> proposal</li>
+            <li>Obama Spicy Noodle Mukbang Video Recording</li>
+          </ul>
+        </section>
 
-    <section id="media">
-      <h2>Meeting Visuals & Media</h2>
-      <p>The LeBrom James Donut:</p>
-      <img src="diagram.png" alt="Diagram placeholder">
-      
-      <h3>Audio Recording</h3>
-      <audio controls>
-        <source src="audio.mp3" type="audio/mp3">
-      </audio>
+        <section id="comments" class="card">
+          <h2>Comments &amp; Concerns</h2>
+          <p><strong>LeBron</strong> asked if we should consider commissioning matching uniforms.</p>
+          <p><strong>Obama</strong> suggested a team bonding session for morale.</p>
+        </section>
 
-      <h3>Video Recording</h3>
-      <video width="640" height="360" controls>
-        <source src="movie.mp4" type="video/mp4">
-      </video>
-    </section>
+        <section id="media" class="card">
+          <h2>Meeting Visuals &amp; Media</h2>
+          <div class="media-gallery">
+            <div class="media-item">
+              <img src="diagram.png" alt="Diagram placeholder">
+              <p>Diagram</p>
+            </div>
+            <div class="media-item">
+              <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+              </audio>
+              <p>Audio Recording</p>
+            </div>
+            <div class="media-item">
+              <video controls>
+                <source src="movie.mp4" type="video/mp4">
+              </video>
+              <p>Video Recording</p>
+            </div>
+          </div>
+        </section>
 
-    <hr>
+        <!-- Feedback Form -->
+        <section id="form" class="card form-section">
+          <h2>Feedback Form</h2>
+          <form>
+            <fieldset>
+              <legend>We value your feedback!</legend>
 
-    <section id="form">
-      <h2>Feedback Form</h2>
-      <form>
-        <fieldset>
-          <legend>We value your feedback!</legend>
+              <p class="prompt">How did you feel about the meeting?</p>
+              <div class="options-group">
+                <label><input type="radio" name="meeting-feeling" value="good"> Good</label>
+                <label><input type="radio" name="meeting-feeling" value="mid"> Mid</label>
+                <label><input type="radio" name="meeting-feeling" value="bad"> Bad</label>
+              </div>
 
-          <!-- 1. Radio buttons: How did you feel -->
-          <p><strong>How did you feel about the meeting?</strong></p>
-          <input type="radio" id="good" name="meeting-feeling" value="good">
-          <label for="good">Good</label><br>
-          <input type="radio" id="mid" name="meeting-feeling" value="mid">
-          <label for="mid">Mid</label><br>
-          <input type="radio" id="bad" name="meeting-feeling" value="bad">
-          <label for="bad">Bad</label><br><br>
+              <p class="prompt">Uniform Participation:</p>
+              <div class="options-group">
+                <label><input type="checkbox" name="uniform-participation"> Commission uniforms</label>
+                <label><input type="checkbox" name="uniform-participation"> No uniform</label>
+              </div>
 
-          <p><strong>Uniform Participation:</strong></p>
-          <input type="checkbox" id="wear-uniform" name="wear-uniform">
-          <label for="wear-uniform">We should get uniforms.</label><br><br>
-          <input type="checkbox" id="no-uniform" name="no-uniform">
-          <label for="no-uniform">No uniform.</label><br><br>
-          
-          <label for="uniform-color"><strong>What color for the team uniform?</strong></label><br>
-          <input type="text" id="uniform-color" name="uniform-color" list="colors">
-          <datalist id="colors">
-            <option value="Crimson">
-            <option value="Midnight Black">
-            <option value="Neon Green">
-            <option value="Steel Grey">
-            <option value="Electric Blue">
-          </datalist><br><br>
+              <p class="prompt">What color for the team uniform?</p>
+              <input type="text" id="uniform-color" list="colors" placeholder="Choose a color">
+              <datalist id="colors">
+                <option value="Crimson">
+                <option value="Midnight Black">
+                <option value="Neon Green">
+                <option value="Steel Grey">
+                <option value="Electric Blue">
+              </datalist>
 
-          <label for="takeover-date"><strong>Final takeover date:</strong></label><br>
-          <input type="date" id="takeover-date" name="takeover-date"><br><br>
+              <p class="prompt">Final takeover date:</p>
+              <input type="date" id="takeover-date">
 
-          <label for="sponsor"><strong>Choose next sponsor:</strong></label><br>
-          <select id="sponsor" name="sponsor">
-            <option value="burger-king">Burger King</option>
-            <option value="tapioca-express">Tapioca Express</option>
-            <option value="fan-fan">Fan Fan</option>
-          </select><br><br>
+              <p class="prompt">Choose next sponsor:</p>
+              <select id="sponsor">
+                <option value="burger-king">Burger King</option>
+                <option value="tapioca-express">Tapioca Express</option>
+                <option value="fan-fan">Fan Fan</option>
+              </select>
 
-          <label for="comments"><strong>Additional comments:</strong></label><br>
-          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Comments, questions, concerns"></textarea><br><br>
+              <p class="prompt">Additional comments:</p>
+              <textarea id="comments" rows="4" placeholder="Comments, questions, concerns"></textarea>
 
-          <button type="submit">Submit Feedback</button>
-        </fieldset>
-      </form>
-    </section>
+              <div class="button-wrap">
+                <button type="submit">Submit Feedback</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
 
-  </main>
+      </main>
 
-  <footer>
-    <p><i>World Domination Committee © 2025 - All Plans Subject to Change</i></p>
-    <div>Document authored by <span>Natalie Ti</span>.</div>
-  </footer>
-
+      <footer class="main-footer">
+        <p>&copy; 2025 World Domination Committee</p>
+        <p>Authored by <span class="author">Natalie Ti</span></p>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>

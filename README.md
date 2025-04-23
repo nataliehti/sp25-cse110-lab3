@@ -1,1 +1,1 @@
-https://nataliehti.github.io/Lab2_Starter/
+https://nataliehti.github.io/sp25-cse110-lab3/
